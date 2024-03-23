@@ -1,5 +1,23 @@
+
+/*
+Javascript time csss*/
+.show-time{
+    position: absolute;
+    text-align: right;
+    margin-top: 40px;
+    margin-left: -205px;
+
+}
 .text-orrange{
     color: orangered;
+}
+.btn-orrange{
+    background-color: orangered;
+    border-radius: 20px;
+    
+}
+.icon{
+    margin-top: 20px;
 }
 .icon i{
     padding-left: 15px;
@@ -99,8 +117,47 @@ footer{
     width: 400px;
     margin-left: 10px;
 }
+
+table img{
+    width: 100px;
+    height: 120px;
+    border: 1px groove orangered;
+    border-radius: 20px;
+}
 table:hover{
     cursor: pointer;
+}
+.grid-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2px;
+}
+.grid-item .card-item{
+    width: 300px;
+    border: 2px groove orangered;
+    margin-top: 35px;
+
+}
+ .card-item img{
+    margin-left: 50px;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+    margin-top: 30px;
+}
+.card-item .add-btn{
+    width: 299px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 10px 12px;
+    outline: none;
+    background: orangered;
 }
 @media screen and (max-width: 600px) {
     
@@ -129,7 +186,12 @@ table:hover{
     text-decoration: underline;
     text-decoration-color: black;}
 }
+.show-time{
+    font-size: 17px;
+    margin-left: -30px;
+}
 .icon i{
+    margin-top: 15px;
     color: orangered;
     padding-top: 10px;
     padding-right: 8px;
@@ -210,5 +272,21 @@ table img{
 table img:hover{
     border: 2px solid gray;
     cursor: pointer;
+}
+.grid-item{
+    display: grid;
+    grid-template-columns: repeat(1 ,1fr);
+}
+.card-item{
+    width: 220px;
+    height: 260px;
+    margin-left: 40px;
+    border-radius: 20px;
+    animation: 20s esyborder infinite;
+}
+@keyframes esyborder {
+    from{border:  2px groove orangered;}
+    to{border: 2px groove orange;}
+    
 }
 }
